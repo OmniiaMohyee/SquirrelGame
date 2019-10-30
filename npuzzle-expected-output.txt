@@ -1,0 +1,6 @@
+Test1: Solution found with 7 steps: ['RIGHT', 'UP', 'LEFT', 'LEFT', 'DOWN', 'RIGHT', 'RIGHT']
+Test2: Solution found with 5 steps: ['UP', 'LEFT', 'DOWN', 'RIGHT', 'DOWN']
+Test3: Solution found with 6 steps: ['RIGHT', 'UP', 'LEFT', 'DOWN', 'DOWN', 'RIGHT']
+Test4: Solution found with 7 steps: ['RIGHT', 'DOWN', 'RIGHT', 'UP', 'LEFT', 'DOWN', 'RIGHT']
+Test5: Solution found with 9 steps: ['DOWN', 'RIGHT', 'UP', 'LEFT', 'LEFT', 'DOWN', 'DOWN', 'RIGHT', 'RIGHT']
+Test6: No solution was found

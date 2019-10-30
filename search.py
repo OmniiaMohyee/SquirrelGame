@@ -94,3 +94,35 @@ def g_bfs(problem: Problem[State,Action], initial_state: Optional[State] = None)
                 tmp = problem.heuristic(successor)
                 frontier.put((tmp,successor))
     return None
+
+def A_star(problem: Problem[State,Action], initial_state: Optional[State] = None)->Optional[List[Action]]:
+    initial_state = initial_state or problem.initial_state
+    frontier: PriorityQueue
+    visited : MutableSet[state] = set()
+    frontier = PriorityQueue()
+    predecessor: MutableMapping[State, Tuple[State, Action]] = {initial_state: (None, None)}
+    frontier.put((0,initial_state))
+    while not(frontier.empty()):
+        tmp = frontier.get()
+        current_state = tmp[1]
+        cost = tmp[0]
+        if problem.is_goal(current_state):
+            solution = []
+            while True:
+                current_state, action = predecessor[current_state]
+                if action is None:
+                    return solution
+                else:
+                    solution.insert(0, action)
+        if current_state in visited:
+            continue
+        else:
+            visited.add(current_state)
+        for action in problem.get_actions(current_state):
+            successor, _ = problem.get_successor(current_state, action)
+            if successor not in predecessor:
+                predecessor[successor] = (current_state, action)
+                tmp = cost + problem.get_cost(successor) + problem.heuristic(successor)
+                frontier.put((tmp,successor))
+    return None            
+            

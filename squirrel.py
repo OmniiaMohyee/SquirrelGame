@@ -137,7 +137,7 @@ class Squirrel(Problem):
     def get_cost(self,state: 'Squirrel.State') -> int:
         return sum(range(state.load +1)) + 1
 
-    def heuristic(self, state: 'Maze.State'):
+    def heuristic(self, state: 'Squirrel.State'):
         distance_fn = lambda v1, v2: abs(v1.x - v2.x) + abs(v1.y - v2.y)
         stash_positions = [Vector(x,y) for y, row in enumerate(state.grid) for x, cell in enumerate(row) if cell == STASH_SYMBOL]
         nut_positions = [Vector(x,y) for y, row in enumerate(state.grid) for x, cell in enumerate(row) if cell == NUT_SYMBOL]

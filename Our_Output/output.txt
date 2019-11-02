@@ -1,0 +1,131 @@
+Test1 :
+
+BFS :
+Solution found with 22 steps: ['RIGHT', 'RIGHT', 'TAKE', 'RIGHT', 'TAKE', 'RIGHT', 'TAKE', 'RIGHT', 'TAKE', 'RIGHT', 'UP', 'UP',
+'LEFT', 'LEFT', 'LEFT', 'HIDE', 'LEFT', 'HIDE', 'LEFT', 'HIDE', 'LEFT', 'HIDE']
+Total Path Cost: 102
+"get_successor" was called 2736 time(s)
+
+Uniform Cost Search :
+Solution found with 38 steps: ['RIGHT', 'RIGHT', 'TAKE', 'RIGHT', 'TAKE', 'RIGHT', 'RIGHT', 'RIGHT', 'UP', 'UP', 'LEFT', 'LEFT', 'LEFT', 
+'HIDE', 'LEFT', 'HIDE', 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'DOWN', 'DOWN', 'LEFT', 'LEFT', 'TAKE', 'RIGHT', 'TAKE', 'RIGHT',
+ 'UP', 'UP', 'LEFT', 'LEFT', 'LEFT', 'LEFT', 'LEFT', 'HIDE', 'LEFT', 'HIDE']
+Total Path Cost: 90
+"get_successor" was called 5146 time(s)
+
+Greedy Best First Search :
+Solution found with 76 steps: ['RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'TAKE', 'RIGHT', 'UP', 'UP', 'LEFT', 'LEFT', 'LEFT', 'HIDE',
+ 'RIGHT', 'RIGHT', 'RIGHT', 'DOWN', 'DOWN', 'LEFT', 'LEFT', 'TAKE', 'RIGHT', 'RIGHT', 'UP', 'UP', 'LEFT', 'LEFT', 'LEFT', 'LEFT', 'HIDE',
+ 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'DOWN', 'DOWN', 'LEFT', 'LEFT', 'LEFT', 'TAKE', 'RIGHT', 'RIGHT', 'RIGHT', 'UP', 'UP', 'LEFT', 
+'LEFT', 'LEFT', 'LEFT', 'LEFT', 'HIDE', 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'DOWN', 'DOWN', 'LEFT', 'LEFT', 'LEFT', 'LEFT', 
+'TAKE', 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'UP', 'UP', 'LEFT', 'LEFT', 'LEFT', 'LEFT', 'LEFT', 'LEFT', 'HIDE']
+Total Path Cost: 112
+"get_successor" was called 393 time(s)
+
+A* :
+Solution found with 38 steps: ['RIGHT', 'RIGHT', 'TAKE', 'RIGHT', 'TAKE', 'RIGHT', 'RIGHT', 'RIGHT', 'UP', 'UP', 'LEFT', 'LEFT', 'LEFT', 
+'HIDE', 'LEFT', 'HIDE', 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'DOWN', 'DOWN', 'LEFT', 'LEFT', 'TAKE', 'RIGHT', 'TAKE', 'RIGHT', 'UP',
+ 'UP', 'LEFT', 'LEFT', 'LEFT', 'LEFT', 'LEFT', 'HIDE', 'LEFT', 'HIDE']
+Total Path Cost: 90
+"get_successor" was called 5119 time(s)
+
+____________________________________________________________
+
+Test2:
+
+BFS :
+Solution found with 50 steps: ['UP', 'UP', 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'TAKE', 'LEFT', 'LEFT',
+ 'LEFT', 'LEFT', 'LEFT', 'LEFT', 'LEFT', 'LEFT', 'HIDE', 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'DOWN', 'DOWN', 'LEFT',
+ 'LEFT', 'LEFT', 'LEFT', 'TAKE', 'RIGHT', 'TAKE', 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'UP', 'UP',
+ 'RIGHT', 'RIGHT', 'DOWN', 'HIDE', 'DOWN', 'HIDE']
+Total Path Cost: 96
+"get_successor" was called 1874 time(s)
+
+Uniform Cost Search :
+Solution found with 50 steps: ['UP', 'UP', 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'TAKE', 'LEFT', 'LEFT',
+ 'LEFT', 'LEFT', 'LEFT', 'LEFT', 'LEFT', 'LEFT', 'HIDE', 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'DOWN', 'DOWN', 'LEFT',
+ 'LEFT', 'LEFT', 'LEFT', 'TAKE', 'RIGHT', 'TAKE', 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'UP', 'UP', 
+'RIGHT', 'RIGHT', 'DOWN', 'HIDE', 'DOWN', 'HIDE']
+Total Path Cost: 96
+"get_successor" was called 2199 time(s)
+
+Greedy Best First Search :
+Solution found with 78 steps: ['UP', 'UP', 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'DOWN', 'DOWN', 'LEFT', 'LEFT', 'LEFT', 
+'TAKE', 'RIGHT', 'RIGHT', 'RIGHT', 'UP', 'UP', 'LEFT', 'LEFT', 'LEFT', 'LEFT', 'LEFT', 'LEFT', 'HIDE', 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT',
+ 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'TAKE', 'LEFT', 'LEFT', 'DOWN', 'DOWN', 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'UP', 'UP', 'RIGHT',
+ 'RIGHT', 'DOWN', 'HIDE', 'UP', 'LEFT', 'LEFT', 'DOWN', 'DOWN', 'LEFT', 'LEFT', 'LEFT', 'LEFT', 'LEFT', 'LEFT', 'LEFT', 'LEFT', 'TAKE',
+ 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'UP', 'UP', 'RIGHT', 'RIGHT', 'DOWN', 'DOWN', 'HIDE']
+Total Path Cost: 116
+"get_successor" was called 398 time(s)
+
+A*:
+Solution found with 50 steps: ['UP', 'UP', 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'TAKE', 'LEFT', 'LEFT',
+ 'LEFT', 'LEFT', 'LEFT', 'LEFT', 'LEFT', 'LEFT', 'HIDE', 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'DOWN', 'DOWN', 'LEFT',
+ 'LEFT', 'LEFT', 'LEFT', 'TAKE', 'RIGHT', 'TAKE', 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'UP', 'UP', 'RIGHT',
+ 'RIGHT', 'DOWN', 'HIDE', 'DOWN', 'HIDE']
+Total Path Cost: 96
+"get_successor" was called 2040 time(s)
+
+__________________________________________________________
+Test3
+
+BFS:
+Solution found with 64 steps: ['RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'UP',
+ 'UP', 'UP', 'LEFT', 'LEFT', 'UP', 'LEFT', 'TAKE', 'RIGHT', 'TAKE', 'DOWN', 'DOWN', 'TAKE', 'LEFT', 'TAKE', 'LEFT', 'LEFT', 'LEFT',
+ 'LEFT', 'LEFT', 'HIDE', 'LEFT', 'HIDE', 'UP', 'UP', 'HIDE', 'RIGHT', 'HIDE', 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT',
+ 'DOWN', 'RIGHT', 'RIGHT', 'UP', 'UP', 'UP', 'TAKE', 'LEFT', 'LEFT', 'LEFT', 'LEFT', 'LEFT', 'LEFT', 'LEFT', 'LEFT', 'LEFT', 'LEFT', 
+'LEFT', 'HIDE']
+Total Path Cost: 151
+"get_successor" was called 55767 time(s)
+
+Uniform Cost Search:
+Solution found with 74 steps: ['RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'UP',
+ 'UP', 'UP', 'LEFT', 'LEFT', 'UP', 'TAKE', 'LEFT', 'TAKE', 'LEFT', 'LEFT', 'LEFT', 'LEFT', 'LEFT', 'HIDE', 'LEFT', 'HIDE', 'RIGHT', 
+'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'DOWN', 'DOWN', 'TAKE', 'LEFT', 'TAKE', 'LEFT', 'LEFT', 'LEFT', 'LEFT', 'LEFT',
+ 'HIDE', 'LEFT', 'HIDE', 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'UP', 'RIGHT', 'RIGHT', 'UP', 'UP', 'UP', 
+'TAKE', 'LEFT', 'LEFT', 'LEFT', 'LEFT', 'LEFT', 'LEFT', 'LEFT', 'LEFT', 'LEFT', 'LEFT', 'LEFT', 'HIDE']
+Total Path Cost: 119
+"get_successor" was called 65674 time(s)
+
+Greedy Best First Search:
+Solution found with 126 steps: ['RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'UP',
+ 'UP', 'UP', 'LEFT', 'LEFT', 'UP', 'TAKE', 'LEFT', 'LEFT', 'LEFT', 'LEFT', 'LEFT', 'LEFT', 'HIDE', 'LEFT', 'DOWN', 'DOWN', 'RIGHT', 
+'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'TAKE', 'LEFT', 'LEFT', 'LEFT', 'LEFT', 'LEFT', 'HIDE', 'LEFT', 'UP', 'UP', 'RIGHT', 
+'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'TAKE', 'RIGHT', 'DOWN', 'RIGHT', 'RIGHT', 'UP', 'UP', 'UP', 'LEFT', 'LEFT', 'LEFT', 
+'LEFT', 'LEFT', 'LEFT', 'LEFT', 'LEFT', 'LEFT', 'LEFT', 'LEFT', 'HIDE', 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT',
+ 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'DOWN', 'DOWN', 'DOWN', 'LEFT', 'LEFT', 'DOWN', 'TAKE', 'LEFT', 'LEFT', 'LEFT', 'LEFT', 'LEFT', 
+'LEFT', 'LEFT', 'HIDE', 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'UP', 'RIGHT', 'RIGHT', 'UP', 'UP', 'UP', 'TAKE', 
+'DOWN', 'DOWN', 'DOWN', 'LEFT', 'LEFT', 'DOWN', 'LEFT', 'LEFT', 'LEFT', 'LEFT', 'LEFT', 'LEFT', 'LEFT', 'UP', 'UP', 'HIDE']
+Total Path Cost: 177
+"get_successor" was called 1007 time(s)
+
+A*:
+Solution found with 74 steps: ['RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'UP', 
+'UP', 'UP', 'LEFT', 'LEFT', 'DOWN', 'TAKE', 'LEFT', 'TAKE', 'LEFT', 'LEFT', 'LEFT', 'LEFT', 'LEFT', 'HIDE', 'LEFT', 'HIDE', 'UP', 'UP', 
+'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'TAKE', 'LEFT', 'TAKE', 'LEFT', 'LEFT', 'LEFT', 'LEFT', 'LEFT', 'HIDE', 
+'LEFT', 'HIDE', 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'RIGHT', 'DOWN', 'RIGHT', 'RIGHT', 'UP', 'UP', 'UP', 'TAKE',
+ 'LEFT', 'LEFT', 'LEFT', 'LEFT', 'LEFT', 'LEFT', 'LEFT', 'LEFT', 'LEFT', 'LEFT', 'LEFT', 'HIDE']
+Total Path Cost: 119
+"get_successor" was called 48059 time(s)
+
+__________________________________________________________
+Test4:
+
+BFS:
+No solution was found
+"get_successor" was called 343 time(s)
+
+Uniform Cost Search:
+Searching for a solution...
+No solution was found
+"get_successor" was called 343 time(s)
+
+Greedy Best First Search:
+No solution was found
+"get_successor" was called 343 time(s)
+
+
+A*:
+No solution was found
+"get_successor" was called 343 time(s)
+

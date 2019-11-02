@@ -82,6 +82,9 @@ class Maze(Problem['Maze.State', str]):
     def is_goal(self, state: 'Maze.State') -> bool:
         return self.grid[state.position] == GOAL_SYMBOL
     
+    def get_cost(self,state: 'Maze.State') -> int:
+        return  1
+    
     def heuristic(self, state: 'Maze.State'):
         distance_fn = lambda v1, v2: abs(v1.x - v2.x) + abs(v1.y - v2.y)
         goal_positions = [Vector(x,y) for y, row in enumerate(self.grid) for x, cell in enumerate(row) if cell == GOAL_SYMBOL]

@@ -122,7 +122,7 @@ def A_star(problem: Problem[State,Action], initial_state: Optional[State] = None
             successor, _ = problem.get_successor(current_state, action)
             if successor not in predecessor:
                 predecessor[successor] = (current_state, action)
-                tmp = cost + problem.get_cost(successor) + problem.heuristic(successor)
+                tmp = cost + problem.get_cost(current_state) + problem.heuristic(successor)
                 frontier.put((tmp,successor))
     return None            
             

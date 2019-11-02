@@ -138,21 +138,21 @@ class Squirrel(Problem):
         return sum(range(state.load +1)) + 1
 
     def heuristic(self, state: 'Maze.State'):
-        distance_fn = lambda v1, v2: abs(v1.x - v2.x) + abs(v1.y - v2.y)
-        stash_positions = [Vector(x,y) for y, row in enumerate(state.grid) for x, cell in enumerate(row) if cell == STASH_SYMBOL]
-        nut_positions = [Vector(x,y) for y, row in enumerate(state.grid) for x, cell in enumerate(row) if cell == NUT_SYMBOL]
-        load = copy.deepcopy(state.load)
-        min_distance=0
-        for nut_position in nut_positions:
-            min_distance += min((distance_fn(nut_position, stash_position) for stash_position in stash_positions), default=math.inf)
-        nearest_nut_distance=min((distance_fn(state.position, nut_position) for nut_position in nut_positions), default=math.inf)
-        nearest_stash_distance=min((distance_fn(state.position, stash_position) for stash_position in stash_positions), default=math.inf)
-        f=1
-        if(state.load ==0 ):
-            f=1000
-        nut_cost = sum(range(state.nut_count+1))
+        # distance_fn = lambda v1, v2: abs(v1.x - v2.x) + abs(v1.y - v2.y)
+        # stash_positions = [Vector(x,y) for y, row in enumerate(state.grid) for x, cell in enumerate(row) if cell == STASH_SYMBOL]
+        # nut_positions = [Vector(x,y) for y, row in enumerate(state.grid) for x, cell in enumerate(row) if cell == NUT_SYMBOL]
+        # load = copy.deepcopy(state.load)
+        # min_distance=0
+        # for nut_position in nut_positions:
+        #     min_distance += min((distance_fn(nut_position, stash_position) for stash_position in stash_positions), default=math.inf)
+        # nearest_nut_distance=min((distance_fn(state.position, nut_position) for nut_position in nut_positions), default=math.inf)
+        # nearest_stash_distance=min((distance_fn(state.position, stash_position) for stash_position in stash_positions), default=math.inf)
+        # f=1
+        # if(state.load ==0 ):
+        #     f=1000
+        # nut_cost = sum(range(state.nut_count+1))
         #heuristic = min_distance+ min(nearest_nut_distance,f*nearest_stash_distance)+self.get_cost(state)+nut_cost                heuristic = state.nut_count + state.load
-        heuristic = self.get_cost(state) +state.nut_count
+        heuristic = self.get_cost(state) + state.nut_count - 1
         return heuristic
 
     
